@@ -1,0 +1,15 @@
+<h2>
+  parent component
+</h2>
+<p></p>
+<hr/>
+
+<app-childc [item]="currentItem" (newItemEvent)="addItem($event)">
+  
+</app-childc>
+
+<ul>
+  <li *ngFor="let item of items">
+    {{ item }}
+  </li>
+</ul>
