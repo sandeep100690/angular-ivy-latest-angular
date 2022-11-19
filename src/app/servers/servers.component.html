@@ -1,9 +1,17 @@
 
-
 <button 
   class="btn btn-primary"
   [disabled]="!allowNewServer">
   Add Server
 </button>
+
+<hr/>
+<h2>Allow New Server:  {{allowNewServer}}</h2>
+
+<hr/>
+<h2>using property binding (innerText) showing result </h2>
+<p [innerText]="allowNewServer"></p>
+<hr/>
+
 <app-server></app-server>
 <app-server></app-server> 
